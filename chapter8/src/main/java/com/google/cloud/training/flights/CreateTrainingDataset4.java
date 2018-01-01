@@ -40,13 +40,13 @@ import com.google.cloud.training.flights.Flight.INPUTCOLS;
 public class CreateTrainingDataset4 {
   public static interface MyOptions extends PipelineOptions {
     @Description("Path of the file to read from")
-    @Default.String("/Users/vlakshmanan/data/flights/small.csv")
+    @Default.String("/Users/cramsey/Downloads/data-science-on-gcp-master/08_dataflow/small.csv")
     String getInput();
 
     void setInput(String s);
 
     @Description("Path of the output directory")
-    @Default.String("/tmp/output/")
+    @Default.String("/Users/cramsey/Downloads/data-science-on-gcp-master/08_dataflow/output/")
     String getOutput();
 
     void setOutput(String s);
