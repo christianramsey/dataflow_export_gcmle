@@ -78,7 +78,7 @@ public class CreateTrainingDataset9 {
     MyOptions options = PipelineOptionsFactory.fromArgs(args).withValidation().as(MyOptions.class);
     // options.setStreaming(true);
     options.setRunner(DataflowRunner.class);
-    options.setTempLocation("gs://flights_gcmle/flights/staging");
+    options.setTempLocation("gs://flights_gcmle/flights/");
     Pipeline p = Pipeline.create(options);
 
     // read traindays.csv into memory for use as a side-input
