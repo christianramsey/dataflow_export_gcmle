@@ -59,15 +59,16 @@ public class CreateTrainingDataset9 {
     boolean getFullDataset();
 
     void setFullDataset(boolean b);
-    
+
+
     @Description("Path of the output directory")
-    @Default.String("gs://cloud-training-demos-ml/flights/chapter8/output/")
+    @Default.String("/Users/cramsey/Downloads/data-science-on-gcp-master/08_dataflow/output/")
     String getOutput();
 
     void setOutput(String s);
 
     @Description("Path of trainday.csv")
-    @Default.String("gs://cloud-training-demos-ml/flights/trainday.csv")
+    @Default.String("/Users/cramsey/Downloads/data-science-on-gcp-master/08_dataflow/trainday.csv")
     String getTraindayCsvPath();
 
     void setTraindayCsvPath(String s);
@@ -77,7 +78,7 @@ public class CreateTrainingDataset9 {
     MyOptions options = PipelineOptionsFactory.fromArgs(args).withValidation().as(MyOptions.class);
     // options.setStreaming(true);
     options.setRunner(DataflowRunner.class);
-    options.setTempLocation("gs://cloud-training-demos-ml/flights/staging");
+    options.setTempLocation("gs://flights_gcmle/flights/staging");
     Pipeline p = Pipeline.create(options);
 
     // read traindays.csv into memory for use as a side-input
