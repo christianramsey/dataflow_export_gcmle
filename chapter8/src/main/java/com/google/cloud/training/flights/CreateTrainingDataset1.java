@@ -32,8 +32,7 @@ import org.slf4j.LoggerFactory;
  * @author vlakshmanan
  *
  */
-public class
-{
+public class CreateTrainingDataset1 {
   private static final Logger LOG = LoggerFactory.getLogger(CreateTrainingDataset1.class);
 
   @SuppressWarnings("serial")
