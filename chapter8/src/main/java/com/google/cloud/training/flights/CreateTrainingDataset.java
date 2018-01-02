@@ -67,7 +67,7 @@ public class CreateTrainingDataset {
     void setFullDataset(boolean b);
 
     @Description("Bucket name")
-    @Default.String("cloud-training-demos-ml")
+    @Default.String("flights_gcmle")
     String getBucket();
     
     void setBucket(String s);
